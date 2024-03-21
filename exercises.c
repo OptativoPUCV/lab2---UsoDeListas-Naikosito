@@ -41,8 +41,17 @@ debes reservar memoria para cada elemento que agregues.
 Al finalizar retorna la lista creada.
 */
 
-List* crea_lista() {
+List* crea_lista() 
+{
    List* L = create_list();
+
+   for(int i = 1; i <= 10; i++)
+     {
+       int *dato = (int*)malloc(sizeof(int));
+       *dato = i;
+       pushCurrent(List *L, void *dato);
+     }
+       
    return L;
 }
 
@@ -51,8 +60,18 @@ Ejercicio 2.
 Crea una función que reciba una lista de enteros (int*) y 
 retorne la suma de sus elementos.
 */
-int sumaLista(List *L) {
-   return 0;
+int sumaLista(List *L) 
+{
+   int suma = 0;
+   int *dato;
+   dato = (int*)first(L);
+   while(dato != NULL)
+     {
+       suma += *dato;
+       dato = (int*)next(L);
+     }
+     
+   return suma;
 }
 
 /*
@@ -75,7 +94,28 @@ El orden de ambas pilas se debe mantener.
 Puedes usar una pila auxiliar.
 */
 
-void copia_pila(Stack* P1, Stack* P2) {
+void copia_pila(Stack* P1, Stack* P2) 
+{
+   Stack* Paux = create_stack(); 
+
+   while (top(P1) != NULL)
+     {
+       int numero = top(P1);
+       push(Paux, elemento);
+       pop(P1);
+     }
+
+   while (top(Paux) != NULL)
+     {
+       int numero = top(Paux);
+       push(P1, elemento);
+       push(P2, elemento);
+       pop(Paux);
+     }
+
+  return P2;
+
+  
 }
 
 /*
