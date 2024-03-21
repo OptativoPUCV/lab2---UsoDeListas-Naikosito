@@ -123,3 +123,14 @@ Thu 21 Mar 2024 08:59:23 PM UTC:
  1 file changed, 1 insertion(+), 2 deletions(-)
  tests:  0|0
 46b0178
+Thu 21 Mar 2024 08:59:38 PM UTC: 
+ exercises.c | 8 --------
+ 1 file changed, 8 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:138:11: error: unused variable ‘P’ [-Werror=unused-variable]
+  138 |    Stack* P = create_stack();
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+f33414d
