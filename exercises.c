@@ -113,8 +113,6 @@ void copia_pila(Stack* P1, Stack* P2)
        pop(Paux);
      }
 
-  return P2;
-
   
 }
 
