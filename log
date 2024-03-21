@@ -71,3 +71,17 @@ exercises.c:97:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 75b2908
+Thu 21 Mar 2024 08:36:28 PM UTC: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:116:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+  116 |   return P2;
+      |          ^~
+exercises.c:97:6: note: declared here
+   97 | void copia_pila(Stack* P1, Stack* P2)
+      |      ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4dadaff
