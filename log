@@ -41,3 +41,33 @@ exercises.c:97:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 abd9bb9
+Thu 21 Mar 2024 08:35:20 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:103:21: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  103 |        int numero = top(P1);
+      |                     ^~~
+exercises.c:104:19: error: ‘elemento’ undeclared (first use in this function)
+  104 |        push(Paux, elemento);
+      |                   ^~~~~~~~
+exercises.c:104:19: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:103:12: error: unused variable ‘numero’ [-Werror=unused-variable]
+  103 |        int numero = top(P1);
+      |            ^~~~~~
+exercises.c:110:21: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  110 |        int numero = top(Paux);
+      |                     ^~~
+exercises.c:110:12: error: unused variable ‘numero’ [-Werror=unused-variable]
+  110 |        int numero = top(Paux);
+      |            ^~~~~~
+exercises.c:116:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+  116 |   return P2;
+      |          ^~
+exercises.c:97:6: note: declared here
+   97 | void copia_pila(Stack* P1, Stack* P2)
+      |      ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+75b2908
