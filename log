@@ -173,3 +173,15 @@ exercises.c:150:106: error: subscripted value is neither array nor pointer nor v
       |                                                                                                          ^
 Compilation failed
 45dddc9
+Sat 23 Mar 2024 05:43:56 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:149:29: error: ‘stack’ undeclared (first use in this function); did you mean ‘Stack’?
+  149 |          char topChar = top(stack);
+      |                             ^~~~~
+      |                             Stack
+exercises.c:149:29: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+7e61614
