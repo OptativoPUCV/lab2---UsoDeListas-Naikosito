@@ -185,3 +185,14 @@ exercises.c:149:29: error: ‘stack’ undeclared (first use in this function); 
 exercises.c:149:29: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 7e61614
+Sat 23 Mar 2024 05:44:05 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:149:25: error: initialization of ‘char’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  149 |          char topChar = top(P);
+      |                         ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+6ff00e8
