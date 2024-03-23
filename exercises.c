@@ -150,6 +150,7 @@ int parentesisBalanceados(char *cadena)
            free(P);
            return 0;
          }
+         pop(P);
        }
        
        i++;
