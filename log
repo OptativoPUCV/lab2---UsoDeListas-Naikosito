@@ -237,3 +237,16 @@ Sat 23 Mar 2024 05:48:36 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 9a7ccfc
+Sat 23 Mar 2024 05:49:54 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:152:19: error: expected ‘;’ before ‘return’
+  152 |            free(P)
+      |                   ^
+      |                   ;
+  153 |            return 0;
+      |            ~~~~~~  
+Compilation failed
+daf38d0
