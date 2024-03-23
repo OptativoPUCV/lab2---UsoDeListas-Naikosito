@@ -214,3 +214,21 @@ exercises.c:150:137: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 9affc4f
+Sat 23 Mar 2024 05:47:51 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:150:43: error: comparison between pointer and integer [-Werror]
+  150 |          if ((cadena[i] == ')' && topChar != '(') || (cadena[i] == ']' && topChar !=              '[') || (cadena[i] == '}' && topChar != '{'))
+      |                                           ^~
+exercises.c:150:83: error: comparison between pointer and integer [-Werror]
+  150 |          if ((cadena[i] == ')' && topChar != '(') || (cadena[i] == ']' && topChar !=              '[') || (cadena[i] == '}' && topChar != '{'))
+      |                                                                                   ^~
+In file included from test.c:5:
+exercises.c:150:136: error: comparison between pointer and integer [-Werror]
+  150 |          if ((cadena[i] == ')' && topChar != '(') || (cadena[i] == ']' && topChar !=              '[') || (cadena[i] == '}' && topChar != '{'))
+      |                                                                                                                                        ^~
+cc1: all warnings being treated as errors
+Compilation failed
+2067ff3
