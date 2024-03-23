@@ -152,3 +152,24 @@ Thu 21 Mar 2024 09:01:42 PM UTC:
  tests:  7|1
 total_score: 60/70
 58e66d4
+Sat 23 Mar 2024 05:43:44 PM UTC: 
+ exercises.c | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:149:29: error: ‘stack’ undeclared (first use in this function); did you mean ‘Stack’?
+  149 |          char topChar = top(stack);
+      |                             ^~~~~
+      |                             Stack
+exercises.c:149:29: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:150:18: error: subscripted value is neither array nor pointer nor vector
+  150 |          if ((exp[i] == ')' && topChar != '(') || (exp[i] == ']' && topChar != '[')               || (exp[i] == '}' && topChar != '{'))
+      |                  ^
+exercises.c:150:55: error: subscripted value is neither array nor pointer nor vector
+  150 |          if ((exp[i] == ')' && topChar != '(') || (exp[i] == ']' && topChar != '[')               || (exp[i] == '}' && topChar != '{'))
+      |                                                       ^
+exercises.c:150:106: error: subscripted value is neither array nor pointer nor vector
+  150 |          if ((exp[i] == ')' && topChar != '(') || (exp[i] == ']' && topChar != '[')               || (exp[i] == '}' && topChar != '{'))
+      |                                                                                                          ^
+Compilation failed
+45dddc9
